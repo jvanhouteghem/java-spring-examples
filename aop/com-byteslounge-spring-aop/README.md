@@ -4,6 +4,7 @@ Modifications par JVanhouteghem le 06/01/2016
 Exemple d'utilisation de Spring AOP
 
 Sortie console : 
+```
 janv. 06, 2016 5:06:37 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
 INFOS: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2e817b38: startup date [Wed Jan 06 17:06:37 CET 2016]; root of context hierarchy
 janv. 06, 2016 5:06:37 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
@@ -64,5 +65,5 @@ Error: Exception from testAroundThrowingException
 -----------------------@After 3 ------------------------------
 After method: testAroundThrowingException. Class: ExampleService
 Exception caught in Main: Error
-
+```
 
