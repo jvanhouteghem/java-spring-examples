@@ -10,9 +10,8 @@ janv. 06, 2016 5:06:37 PM org.springframework.beans.factory.xml.XmlBeanDefinitio
 INFOS: Loading XML bean definitions from class path resource [spring-config.xml]
 janv. 06, 2016 5:06:37 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
 INFOS: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@42e26948: defining beans [exampleService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,loggingAspect,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
-==================================================
+
 Call exampleBean.simpleMethod() : 
-==================================================
 -----------------------@Before------------------------------
 org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint$SourceLocationImpl@5158b42fBefore method: simpleMethod. Class: ExampleService
 -----------------------@Before2------------------------------
@@ -25,9 +24,7 @@ After method: simpleMethod. Class: ExampleService
 After method: simpleMethod. Class: ExampleService
 
 
-==================================================
 Call exampleBean.methodReturnsValue() : 
-==================================================
 -----------------------@Before2------------------------------
 Before method: methodReturnsValue. Class: ExampleService
 -----------------------@After 3 ------------------------------
@@ -37,9 +34,7 @@ After returning method: methodReturnsValue. Class: ExampleService
 Result returned: Hello from methodReturnsValue
 
 
-==================================================
 Call exampleBean.methodThrowsException() 
-==================================================
 -----------------------@Before2------------------------------
 Before method: methodThrowsException. Class: ExampleService
 -----------------------@After 3 ------------------------------
@@ -50,9 +45,7 @@ Exception: Exception from methodThrowsException
 Exception caught in Main: Exception from methodThrowsException
 
 
-==================================================
 Call exampleBean.testAroundReturningResult() 
-==================================================
 -----------------------@Around------------------------------
 Before method: testAroundReturningResult. Class: ExampleService
 -----------------------@Before2------------------------------
@@ -62,9 +55,7 @@ Returning: Hello from aroundReturningResult
 After method: testAroundReturningResult. Class: ExampleService
 
 
-==================================================
 Call exampleBean.testAroundThrowingException() 
-==================================================
 -----------------------@Around------------------------------
 Before method: testAroundThrowingException. Class: ExampleService
 -----------------------@Before2------------------------------
